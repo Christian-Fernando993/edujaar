@@ -1,0 +1,88 @@
+header{
+    background-color: $branco;
+    height: 119px;
+    display: flex;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 2rem;
+            }
+            h3{
+                color: #04016C;
+                font-weight: 400;
+                line-height: 25px;
+                span{
+                    color: #2AAA94;
+                }
+            }
+        }
+        nav{
+            display: flex;
+            ul{
+                display: flex;
+                grid-gap: 2.2rem;
+                li{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        color: #1B2336;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 26px; /* 130% */
+                        text-transform: capitalize;
+                        margin-right: 2.2rem;
+                        transition: .3s ease-in;
+                        &:hover{
+                            color: #2AAA94;
+                            text-decoration-line: underline;
+                        }
+                    }
+                    img{
+                        width: 10.125px;
+                        height: 5.872px;
+                    }
+                }
+            }
+        }
+        .icones{
+            display: flex;
+            align-items: center;
+            grid-gap: 2.85rem;
+        }
+        .login{
+            display: flex;
+            align-items: center;
+            grid-gap: 3.9rem;
+            a{
+                color: #4A4A4A;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 35px; /* 175% */
+                text-decoration-line: underline;
+                transition: all .3s ease-in;
+                &:hover{
+                    color: #2AAA94; 
+                }
+            }
+            .btn-login{
+
+                border-radius: 10px;
+                background: $roxo-100;
+                padding: 1.8rem 3.7rem;
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 22px; /* 110% */
+                // transition: all .3s ease; Nao ta funcionando
+                &:hover{
+                    background: $azul-100;
+                }
+            }
+        }
+    }
+}
