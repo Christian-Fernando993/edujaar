@@ -78,9 +78,9 @@ header{
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 22px; /* 110% */
-                // transition: all .3s ease; Nao ta funcionando
+                transition: all .3s ease-in-out; 
                 &:hover{
-                    background: $azul-100;
+                    background: $azul-200;
                 }
             }
         }

@@ -1,4 +1,288 @@
 .s-hero{
-    
-    background-color: #04016ccc;
+    background-image: url('../img/bg-hero.svg') ;
+    // height: 93.6rem;
+    position: relative;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            padding-top: 14.2rem;
+            .text{
+                max-width: 67rem;
+                p{
+                    color: $branco;
+                    width: 460px;
+                    padding-bottom: 6.3rem;
+                }
+                h1{
+                    color: $branco;
+                    padding-bottom: 9.2rem;
+                    span{
+                        color: #4BE5CA;
+                    }
+                }
+            }
+            .view-courses{
+                display: flex;
+                align-items: center;
+                margin-bottom: 7.9rem;
+                button{
+                    padding: 0px 3.8rem;
+                    height: 6rem;
+                    color: $branco;
+                    border: 1px solid $branco;
+                    border-radius: 5px;
+                    margin-right: 3.6rem;
+                }
+                p{
+                    color: $branco;
+                }
+            }
+            .label{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 489px;
+                background-color: $branco;
+                height: 7rem;
+                border-radius: .7rem;
+                color: #4F547B;
+                font-size: 1.6rem;
+                padding: 0px 0.9rem 0px 3.5rem;
+                button{
+                    display: flex;
+                    align-items: center;
+                    padding: 1.4rem 3rem;
+                    color: $branco;
+                    font-size: 1.5rem;
+                    gap: 1.2rem;
+                    background: linear-gradient(96deg, #3023B2 1%, #7F56D9 100.05%);;
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            position: relative;
+            .conteudo-right{
+                display: flex;
+                align-items: center;
+                grid-gap: 2.5rem;
+                height: 158px;
+                position: absolute;
+                top: 225px;
+                left: -121px;
+                .img-separador{
+                    width: 24px;
+                    height: 146px;
+                }
+                .conteudo{
+                    max-width: 272px;
+                    p{
+                        color: $branco;
+                        font-size: 1.6rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    span{
+                        color: $branco;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .avaliacao{
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 0.938rem;
+                        margin-top: 0.5rem;;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .garota{
+                width: 100%;
+                max-width: 658px;
+                height: 908px;
+                position: relative;
+                left: 63px;
+            }
+        }
+    }
+}
+
+.s-partners{
+    background: linear-gradient(180deg, #084FC7 0%, rgba(8, 79, 199, 0.00) 172.16%);
+    padding: 6.5rem 0rem;
+    .container{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        grid-gap: 13.3rem;
+        img{
+            display: flex;
+            align-items: center;
+            max-width: 12rem;
+        }
+    }
+}
+
+.s-featured{
+    background: linear-gradient(180deg, #D9ECFF 0%, rgba(240, 243, 255, 0.00) 127.78%);
+    .container{
+        padding-top: 117px;
+        padding-bottom: 102px;
+        .text{
+            h2{
+                text-align: center;
+                margin-bottom: 4.8rem;
+                color: #323232;
+            }
+            h3{
+                margin: 0 auto;
+                text-align: center;
+                max-width: 691px;
+                margin-bottom: 9rem;
+                color: #323232;
+            }
+
+        }
+        button{
+            display: flex;
+            margin: 0 auto;
+            margin-top: 9.1rem;
+            border-radius: 10px;
+            background: $roxo-100;
+            padding: 1.8rem 3.7rem;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px; /* 110% */    
+            transition: all 0.3s ease;
+            &:hover{
+                background: $azul-200; 
+            }   
+        }
+    }    
+}
+
+.s-learn{
+    background: linear-gradient(72deg, rgba(8, 79, 199, 0.90) 26.49%, rgba(127, 86, 217, 0.90) 85.53%);
+    .container{
+        padding-top: 113px;
+        padding-bottom: 144px;
+        .title{
+            margin-bottom: 118px;
+            h2{
+                color: #FFF;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            h3{
+                color: #FFF;
+                width: 728px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            gap: 186px;
+            .options{
+                text-align: center;
+                img{
+                    margin: 0 auto;
+                    margin-bottom: 3.6rem;
+                }
+                h3{
+                    color: $branco;
+                    font-weight: 700;
+                    line-height: 32.64px;
+                }
+                p{
+                    max-width: 331px;
+                    margin-top: 2.9rem;
+                    color: $branco;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}
+
+.s-categories{
+    background: linear-gradient(180deg, #D9ECFF 0%, rgba(217, 236, 255, 0.00) 100%);
+    .container{
+        padding-top: 101px;
+        padding-bottom: 155px;
+        .title{
+            margin-bottom: 10rem;
+            h2{
+                color: #323232;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            h3{
+                color: #323232;
+                width: 728px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.s-resistance{
+    .container{
+        padding-top: 13.5rem;
+        padding-bottom: 14.9rem;
+        .topo{
+            display: flex;
+            margin-bottom: 11.4rem;
+            .left{
+                max-width: 664px;
+                height: 666px;
+                margin-right: 15.1rem;
+            }
+            .right{
+                padding-top: 12.9rem;
+                max-width: 775px;
+                h2{
+                    margin-bottom: 5.2rem;
+                    color: #1D1D45;
+                }
+                p{
+                    margin-bottom: 4.8rem;
+                    color: #4E596B;
+                }
+                button{
+                    border-radius: 10px;
+                    background: $roxo-100;
+                    padding: 1.8rem 3.7rem;
+                    color: #FFF;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 22px; /* 110% */    
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background: $azul-200; 
+                    }   
+                }
+            }
+        }
+        .video{
+            display: flex;
+            justify-content: center;
+            .thumb-video{
+                max-width: 1373px;
+                height: 727px;
+            }
+            .btn-play{
+                max-width: 218px;
+                height: 218px;
+            }
+        }
+    }
 }
